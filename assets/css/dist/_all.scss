@@ -1,0 +1,92 @@
+a{
+  margin-bottom: -4px;
+  &:hover{
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    color: #FF8C07;
+  }
+}
+
+h6{
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+
+}
+h3 {
+  color: #000000;
+}
+
+    @media(min-width: 1400px){
+      h3{
+        font-size: 19px;
+      }
+      h2{
+        font-size: 35px;
+      }
+      p{
+        font-size: 17px;
+      }
+    }
+  @media(max-width: 1367px) {
+    h3{
+      font-size: 18px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 15.3px;
+    }
+   }
+
+@media (max-width: 768px) {
+
+  p{
+    font-size: 14.5px;
+  }
+
+}
+
+    @media (max-width: 567px) {
+      h3{
+        font-size: 16px ;
+        margin-bottom: -.3%;
+      }
+      h2{
+
+          font-size: 20px;
+
+      }
+      p{
+        font-size: 13px;
+      }
+
+    }
+
+
+nav.notes{
+  padding: 13px;
+  border-radius: 5px;
+  button.courses{
+    //padding: 2px;
+    outline: 0;
+    border-radius: 3px;
+    border: none;
+    padding: 7px 15px;
+    font-weight: bold;
+    &:hover{
+    color:var(--primary) !important;
+    }
+  }
+
+  @media (max-width: 567px) {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1300px) {
+.Motion{
+  p{
+    font-size: 16px !important;
+  }
+}}

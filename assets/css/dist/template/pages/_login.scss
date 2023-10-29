@@ -1,0 +1,298 @@
+.log-in{
+
+
+.popup{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0,0,0,.4);
+  display: none;
+  left: 0;
+  right: 0;
+}
+.popup .inner-popup {
+
+  position: fixed;
+  top: 50%;
+
+  width: 40%;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+
+  transform: translate(70%, -50%);
+
+  @if($site-en){ // اذا كان الموقع انجليزي
+    right: 0;
+    left: 0;
+  }@else { // اذا كان الموقع عربي
+    left: 0;
+
+  }
+
+
+  @media(min-width: 701px) and(max-width: 1100px) {
+
+    width: 75%;
+    transform: translate(17%, -50%);
+
+  }
+
+
+  @media (max-width: 700px) {
+
+    width: 90%;
+    transform: translate(6%, -50%);
+  }}
+.show-popup{
+  cursor: pointer;
+  display: block;
+}
+}
+
+
+/* Style tab links */
+button.tablink{
+  outline: 0;
+  border: none;
+  border-radius: 10px;
+
+}
+.tablink {
+
+  color: black;
+
+  cursor: pointer;
+  padding: 28px 16px;
+  width: 50%;
+  background-color: var(--secondary);
+  position: relative;
+  font-size: 20px;
+  transition: .3s;
+
+
+  @if($site-en){ // اذا كان الموقع انجليزي
+    float: left;
+  }@else { // اذا كان الموقع عربي
+   float: right;
+  }
+  &:before{
+    position: absolute;
+    content: "";
+    background-color: var(--secondary);
+    height: 2px;
+    width: 30px;
+    text-align: left;
+    bottom: 24px;
+    margin: auto !important;
+    display: inline-block;
+
+    transform: translateX(-50%);
+    left: 50%;
+
+  }
+
+
+}
+
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 90px 20px 30px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#login {background-color: white}
+#Singup {background-color: white}
+
+
+
+
+
+//custom radio button
+
+
+
+   /* The container */
+ .custom-radio ,.custom-radio1,.custom-radio2 {
+   display: block;
+   //position: relative;
+   padding: 5px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+
+/* Hide the browser's default radio button */
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+
+  height: 18px;
+  width: 18px;
+  border: 1.3px solid #adb5bd;
+  border-radius: 50%;
+
+  @if($site-en){ // اذا كان الموقع انجليزي
+    left: 0;
+  }@else { // اذا كان الموقع عربي
+   right: 0;
+  }
+
+}
+ }
+/* On mouse-over, add a grey background color */
+.custom-radio hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio  input:checked ~ .checkmark {
+  background-color: var(--secondary);
+  border: none;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+  top: 5.3px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+
+
+
+  @if($site-en){ // اذا كان الموقع انجليزي
+    left: 5.3px;
+  }@else { // اذا كان الموقع عربي
+    right: 5.3px;
+  }
+}
+
+
+
+
+.remmber-check{
+  /* The container */
+  .container {
+    display: block;
+    position: relative;
+
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @if($site-en){ // اذا كان الموقع انجليزي
+      padding-left: 18px;
+    }@else { // اذا كان الموقع عربي
+      padding-left: 0px;
+      padding-right: 18px;
+    }
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 5px;
+
+    height: 20px;
+    width: 20px;
+    border: 1px solid #7b55c8;
+    border-radius: 50%;
+
+
+
+    @if($site-en){ // اذا كان الموقع انجليزي
+      left: 0;
+    }@else { // اذا كان الموقع عربي
+      right: auto;
+      left: 0;
+    }
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    //background-color: #2196F3;
+    border: 1px solid #7b55c8;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+
+    top: 2px;
+    width: 7px;
+    height: 12px;
+    border: solid var(--secondary);
+    border-width: 0 2px 2.1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    @if($site-en){ // اذا كان الموقع انجليزي
+      left: 5px;
+    }@else { // اذا كان الموقع عربي
+      left: auto;
+      right: 5px;
+
+    }
+  }
+}

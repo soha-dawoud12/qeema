@@ -1,0 +1,86 @@
+.booking {
+  form {
+    input, textarea {
+      border: 2px solid var(--secondary) !important;
+      font-size: 90%;
+    }
+
+
+    .custom-file {
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.075);
+      //border: 2px solid var(--secondary) !important;
+    }
+
+    .custom-file-label::after {
+      display: none !important;
+      top: 0;
+
+
+
+
+      @if($site-en){ // اذا كان الموقع انجليزي
+        right: 0;
+      }@else { // اذا كان الموقع عربي
+        left: 0;
+      }
+    }
+
+    .upload-img {
+      max-width: 40px;
+      max-height: 40px;
+      margin-top: -5px;
+
+    }
+
+    label.custom-file-label{
+      border: none;
+      background: none !important;
+    }
+
+
+    label{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+
+}
+
+button.cancel{
+
+  padding: 8px;
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  background: #1b1e21;
+  color: #FFFFFF;
+  &:hover{
+    color: #FFFFFF !important;
+  }
+}
+
+
+.order-details{
+  hr{
+    margin-top: .4rem !important;
+    margin-bottom: .4rem;
+
+    border-top: 1px solid #adb5bd;
+  }
+
+  .border-layout-order{
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    p{
+      opacity: .7;
+    }
+  }
+
+  .course-name{
+    font-size: 15px;
+  }
+
+
+}

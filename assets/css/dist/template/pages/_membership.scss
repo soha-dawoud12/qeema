@@ -1,0 +1,51 @@
+
+.member-ship{
+
+
+
+h2,h5{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+  span{
+    font-size: 16px;
+  }
+
+.pages.membership{
+  header .header-membership{
+    background: none !important;
+    box-shadow: none !important;
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+ .head-title{
+   h5{
+     line-height: .5;
+   }
+
+ }
+
+  p{
+    opacity: .5;
+  }
+button.substation{
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+
+  .member-text{
+    border-top: 1.7px solid #cccccc;
+    border-bottom: 1.7px solid #cccccc;
+
+    p{
+
+      opacity: .35;
+    }
+  }
+}

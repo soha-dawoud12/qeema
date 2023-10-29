@@ -1,0 +1,299 @@
+.community{
+
+    @media (max-width: 1400px) and (min-width: 992px){
+
+    .articles-details {
+      margin: 0px 40px;
+    }    }
+
+}
+
+
+.community-number{
+  border:  1.8px solid #cccccc;
+  border-radius: 3px;
+  border-left: 4px solid var(--primary);
+
+  padding: 5px;
+margin-bottom: 5px;
+@media (min-width: 768px) {
+  &:nth-child(2) {
+    margin-right:10px;
+    margin-left: 10px;
+  }
+}
+
+
+}
+.community-icon{
+  border: 1px solid #E6E8EB;
+  border-radius: 50%;
+  //cursor: pointer;
+
+  background: #f8f9fa;
+  i{
+    padding: 10px;
+    color: var(--secondary);
+
+  }
+}
+.community{
+  .collapse {
+    position: relative;
+    &:before{
+      width: 0;
+      height: 0;
+      position: absolute;
+
+      bottom: 100%;
+      z-index: 2;
+      content: "";
+      border: 8px solid transparent;
+      border-bottom-color: var(--secondary);
+
+      @if($site-en){ // اذا كان الموقع انجليزي
+        left: 50px;
+      }@else { // اذا كان الموقع عربي
+
+        right: 50px;
+      }
+
+
+    }
+  }
+}
+
+
+.community{
+  .input-reply{
+    input{
+
+
+    border: none;
+    border-left: 1px solid #EEEEEE;
+    font-size: 15px;
+    padding: 19px;
+  }
+
+    button{
+      font-size: 14px;
+
+
+
+
+      @if($site-en){ // اذا كان الموقع انجليزي
+        padding-right: 28px;
+      }@else { // اذا كان الموقع عربي
+        padding-right: 0;
+        padding-left:  28px;
+      }
+    }
+    span{
+       font-size: 14px;
+    }
+}   }
+
+.line {
+
+
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  height: 1px;
+  padding: 0;
+
+  /* right: -25px; */
+  //margin: auto;
+  z-index: 2;
+  margin-top: -4px;
+  margin-bottom: 8px;
+
+
+
+  @if($site-en){ // اذا كان الموقع انجليزي
+    left: 0;
+  }@else { // اذا كان الموقع عربي
+   right: 0;
+  }
+}
+
+.card-body{
+  img{
+    border: 2px solid var(--primary);
+
+  }
+}
+
+.reply-user{
+  p ,hr{
+    width: 80%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+}
+
+.mentor{
+  button.register{
+    border: 1px solid  #eeeeee;
+  }
+
+  button.booking{
+background-color: white;
+    outline: 0;
+    border: 1px solid;
+    &:hover{
+      background-color: var(--secondary);
+      color: white;
+    }
+  }
+  @media (max-width: 1200px){
+    button{
+      font-size: 14px;
+    }
+  }
+}
+
+.mentor{
+
+
+
+span.hidden { display:none; }
+
+
+}
+
+
+.date-appo{
+  border:1px solid var(--secondary);
+  border-radius: 4px;
+  padding: 7px 7px 0 7px ;
+  cursor: pointer;
+
+}
+
+.voices{
+  .owl-carousel{
+
+
+  .owl-item img {
+
+    width: auto !important;
+    margin: auto;
+  }
+  .item{
+
+      article {
+        .image-voice {
+
+          position: relative;
+          display: inline-block;
+
+        }
+        .image-voice .img-top {
+          display: none;
+          position: absolute;
+          top: 0;
+
+          z-index: 14;
+          margin: auto;
+
+
+
+          @if($site-en){ // اذا كان الموقع انجليزي
+            left: 0;
+          }@else { // اذا كان الموقع عربي
+           right: 0;
+          }
+
+        }
+      &:hover{
+        background-color: var(--secondary);
+        color: white;
+        transition: all 500ms;
+        img.img-back {
+         opacity: .1;
+        }
+        img.img-top  {
+          display: block !important;
+
+
+        }
+        h6{
+          color: white;
+        }
+    }}
+
+  article.active{
+    .image-voice {
+
+      position: relative;
+      display: inline-block;
+
+    }
+    .image-voice .img-top {
+      display: none;
+      position: absolute;
+      top: 0;
+
+      z-index: 14;
+      margin: auto;
+
+      @if($site-en){ // اذا كان الموقع انجليزي
+        left: 0;
+      }@else { // اذا كان الموقع عربي
+        right: 0;
+      }
+    }
+
+      background-color: var(--secondary);
+
+      transition: all 500ms;
+    h6{
+      color: white;
+    }
+      img.img-back {
+        opacity: .1;
+      }
+      img.img-top  {
+        display: block !important;
+
+
+      }
+  }
+
+
+  }
+  article{
+    height: 127px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+  h6{
+    font-size: 15px;
+    margin-top: 13px;
+    color: black;
+  }
+}}
+
+
+  .voice-record{
+    article{
+      .entry-body{
+        margin-top: 50px;
+      }
+    }
+
+}
+
+  .img-community{
+    img
+    {
+      width: 100%;
+      max-height: 300px;
+    }
+  }

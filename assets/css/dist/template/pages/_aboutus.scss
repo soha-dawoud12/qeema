@@ -1,0 +1,83 @@
+#aboutus{
+  background: url("../images/aboutus.webp") center top no-repeat ;
+  background-size: contain;
+  height: 100vh;
+  min-width: 100%;
+
+
+  @media (max-width: 922px) {
+    background: url("../images/aboutus.webp") center top no-repeat ;
+    background-size: cover;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .about{
+    position: relative;
+
+    .about-us{
+
+      position: absolute;
+      width: 39%;
+      z-index: 5;
+      margin: auto;
+      top: 55%;
+      transform: translateY(-55%);
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size: 15px;
+
+
+      @if($site-en){ // اذا كان الموقع انجليزي
+        left: 0;
+        right: 3%;
+        text-align: left;
+      }@else { // اذا كان الموقع عربي
+       right: 3%;
+        left: 0;
+        text-align: right;
+      }
+
+
+
+      @media(min-width:1440px) {
+
+        font-size: 20px;
+
+      }
+
+      @media(max-width: 1199px) {
+        top: 50%;
+        width: 42%;
+
+      }
+      @media(min-width:768px)and (max-width: 922px) {
+        margin-top: 10%;
+
+        width: 59%;
+
+      }
+      @media(max-width:767.9px ) {
+
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+        line-height: 1.23;
+
+        width: 71%;
+        margin: auto;
+
+
+      }
+      @media(max-width: 576px) {
+        //top: 40% ;
+
+        width: 60% !important;
+        margin: auto !important;
+
+      }
+
+  } }
+
+}

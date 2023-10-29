@@ -1,0 +1,79 @@
+.edit-profile{
+  border: 2px solid #E8E2E7;
+  border-radius: 5px;
+
+    width: 50%;
+margin: auto;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+
+  }
+
+form{
+
+input ,textarea{
+  font-size: 90%;
+  &::placeholder{
+    font-size: 90%;
+  }
+}
+}
+}
+
+
+.mentor-profile-about{
+  p{
+
+  width: 75%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+}
+.myAppointments{
+  h3.bg-appointments , .bg-appointments {
+    background-color: #7B55C8;
+    border-radius: 5px;
+    padding: 8px 15px 8px 15px ;
+  }
+}
+
+.date:not(.open) .date-appo {
+  background: #7B55C8;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.date:not(.open) .date-appo .text-primary{
+  color: #FFF !important;
+}
+
+.data-mentor-profile{
+  h6{
+    font-size: 90%;
+  }
+}
+
+.btn-pages{
+  .btn {
+    border: none;
+    outline: none;
+
+    background-color:#D1D4DA;
+    cursor: pointer;
+    font-size: 18px;
+
+    color: white;
+  }
+
+  /* Style the active class, and buttons on mouse-over */
+  .actives, .btn:hover {
+    background-color: #7B55C8;
+    color: white;
+
+  }
+}

@@ -1,0 +1,87 @@
+.course-lesson{
+
+  .content{
+    border: 1px solid #EDEDED;
+    display: none;
+  }
+
+  .content.active1{
+    display: block;
+  }
+
+  li.menu-item{
+    h5 ,i {
+      color: #7B55C8;;
+    }
+  }
+  li.menu-item.active1{
+    background-color: #7B55C8;
+    h5 ,i{
+      color: #FFFFFF;
+    }
+  }
+  li.menu-item.active1 .submenu{
+    background-color: #EEEEEE;
+  }
+  li.menu-item a{
+    display: block;
+  }
+
+  li.menu-item.active1 h5{
+    //color: #1d2124;
+  }
+
+li.menu-item h5{
+  font-size: 17px;
+}
+
+
+  li.submenu h6{
+    font-size: 15px;
+  }
+  .submenu{
+    display: none;
+  }
+
+  .submenu .submenu-item{
+
+
+    @if($site-en){ // اذا كان الموقع انجليزي
+      padding-left:15px ;
+    }@else { // اذا كان الموقع عربي
+      padding-left:0 ;
+      padding-right: 15px;
+    }
+
+
+
+
+  }
+
+  .submenu-item.active1{
+    background:#7B55C8;
+
+    h6{
+      color: white;
+
+    }
+}
+
+  li.submenu-item  a{
+    border-bottom: 1px solid #7B55C8;
+    padding-top: 5px;
+  }
+
+  .submenu-item.active1 a{
+    padding-top: 5px;
+  }
+
+
+  @media (max-width: 576px) {
+    .course-video{
+      order: 1;
+    }
+    
+  }
+
+}

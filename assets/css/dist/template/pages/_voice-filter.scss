@@ -1,0 +1,106 @@
+
+.filter{
+
+  .multiselect {
+
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 5px;
+    select{
+      padding: 10px;
+    }
+  }
+
+  .selectBox {
+    position: relative;
+
+  }
+
+  .selectBox select {
+    width: 100%;
+    color: #818182 !important;
+    /* border: none !important; */
+    font-size: 15px;
+    padding: 5px 1px 11px;
+    //border-bottom: 1px solid #cfcfcf;
+    border: none;
+  }
+
+
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+  }
+
+  #checkboxes , #checkboxes2 , #checkboxes3{
+    display: none;
+    //border: 1px  solid var(--primary);
+     padding: 4px 4px;
+
+    border-top: 1px solid #e9ecef;
+    @if($site-en){
+      direction: rtl;
+    }@else {
+      direction: ltr;
+    }
+
+    label {
+      color: #818182;
+      font-size: 15px;
+    }
+  }
+
+  #checkboxes label , #checkboxes2 label, #checkboxes3 label {
+    //display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #checkboxes label:hover , #checkboxes2 label:hover {
+    background-color: #fafafa;
+  }
+
+  input[type=radio], input[type=checkbox] {
+
+    margin: 7px !important;
+  }
+
+  .search{
+    button{
+      //width: 150px;
+      border: none;
+      background-color: var(--primary);
+      color: #fff;
+      border-radius: 5px;
+      &:hover{
+        background-color: var(--secondary);
+      }    }
+  }
+  input::placeholder{
+    color: #818182 !important;
+  }
+  label {
+    color: var(--primary);
+  }
+
+  .labels{
+    label{
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+  .labels label:not(:last-child){
+    border-bottom: 1px solid #e9ecef;
+    padding: 3px;
+  }
+
+
+
+
+
+}
+

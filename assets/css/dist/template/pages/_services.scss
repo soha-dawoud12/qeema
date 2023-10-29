@@ -1,0 +1,135 @@
+#services{
+
+
+  background: url("../images/services.webp") center center no-repeat ;
+  background-size: contain;
+  min-height: 100vh;
+  min-width: 100%;
+
+  @media (max-width: 768px) {
+    background: url("../images/services.webp") center center no-repeat ;
+    background-size: cover;
+
+  }
+
+  .services{
+
+    padding-top: 6%;
+    @media (max-width: 768px) {
+      padding-bottom: 40%;
+    }
+
+
+
+  .widget-body{
+    //height: 243px !important;
+
+    @media  (min-width: 1400px) {
+      height: 270px !important;
+
+
+    }
+    p{
+      color: #000000;
+    }
+
+
+    img{
+      padding-top: 8%;
+      margin-bottom: 2%;
+      &:hover {
+        //transform: scale(1.3);
+        //transition: all 500ms;
+      }
+
+
+
+ }
+
+  }
+
+
+
+
+
+.swiper-container{
+  margin: -10px !important;
+
+  .swiper-slide{
+    @media (min-width: 1200px) {
+      width: 250px !important;
+
+
+      @if($site-en){ // اذا كان الموقع انجليزي
+        margin-right: 22px !important;
+      }@else { // اذا كان الموقع عربي
+        margin-right: 0 !important;
+        margin-left: 22px!important;
+      }
+    }
+
+
+  &:hover {
+    box-shadow: 0 5px 10px #c6c8ca !important;
+    background-color: var(--secondary) !important;
+    h3,p{
+      color: #fff !important;
+    }
+    img {
+      filter: sepia(1);
+      transform: scale(1.3);
+      transition: all 500ms;
+    }
+
+  } }
+  i{
+
+    padding: 11px;
+
+  }
+
+}
+    .swiper-button-next,
+    .swiper-button-prev{
+      position: absolute;
+      text-align: center;
+      top: 55%;
+
+      color: var(--secondary);
+
+
+      transition-duration: 0.5s;
+      z-index: 5;
+    outline: 0;
+
+
+      &:hover{
+
+        color: var(--primary);
+        transition-duration: 0.5s;
+      }
+    }
+    .swiper-button-next{
+
+      transform: translateY(-50%);
+      @if($site-en){ // اذا كان الموقع انجليزي
+        left: -1%;
+      }@else { // اذا كان الموقع عربي
+        right: -1%;
+      }
+
+
+
+    }
+    .swiper-button-prev{
+
+      transform: translateY(-50%);
+      @if($site-en){ // اذا كان الموقع انجليزي
+        right: -1%;
+      }@else { // اذا كان الموقع عربي
+        left: -1%;
+      }
+    }
+  }
+
+  }
